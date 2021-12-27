@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVVMDemo</string>
+    <string name="allow">Allow</string>
+    <string name="this_app_requires_sms_permissions">This app requires SMS permissions.</string>
+</resources>

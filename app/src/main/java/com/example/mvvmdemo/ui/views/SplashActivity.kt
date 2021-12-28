@@ -1,4 +1,4 @@
-package com.example.mvvmdemo.views
+package com.example.mvvmdemo.ui.views
 
 import android.Manifest
 import android.content.pm.PackageManager

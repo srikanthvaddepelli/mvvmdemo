@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MVVMDemo">
-        <activity android:name=".views.SplashActivity">
+        <activity android:name="com.example.mvvmdemo.ui.views.SMSListingActivity"></activity>
+        <activity android:name="com.example.mvvmdemo.ui.views.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

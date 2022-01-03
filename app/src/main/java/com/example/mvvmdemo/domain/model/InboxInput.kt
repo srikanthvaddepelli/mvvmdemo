@@ -1,4 +1,3 @@
 package com.example.mvvmdemo.domain.model
 
-class InboxInput {
-}
+data class InboxInput(val offset: Int)

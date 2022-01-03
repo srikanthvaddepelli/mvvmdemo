@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.example.mvvmdemo"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -31,10 +31,25 @@ android {
         jvmTarget = '1.8'
     }
 }
-
+repositories {
+    mavenCentral()
+}
 dependencies {
+    implementation "com.mikepenz:fastadapter:5.6.0"
+    implementation "com.mikepenz:fastadapter-extensions-diff:5.6.0"
+    implementation "com.mikepenz:fastadapter-extensions-paged:5.6.0"
+    implementation "com.mikepenz:fastadapter-extensions-scroll:5.6.0"
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.paging:paging-runtime-ktx:3.1.0'
+    def lifecycle_version = "2.4.0"
+
+    implementation "io.insert-koin:koin-android:3.1.4"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+//    implementation "androidx.activity:activity-ktx:$lifecycle_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
+
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'

@@ -4,17 +4,22 @@
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="android.permission.WRITE_SMS" />
 
     <application
+        android:name=".ui.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MVVMDemo">
-        <activity android:name="com.example.mvvmdemo.ui.views.SMSListingActivity"></activity>
-        <activity android:name="com.example.mvvmdemo.ui.views.SplashActivity">
+        <activity android:name="com.example.mvvmdemo.ui.views.activity.SMSListingActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.mvvmdemo.ui.views.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

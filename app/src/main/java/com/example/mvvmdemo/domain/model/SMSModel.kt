@@ -8,4 +8,5 @@ data class SMSModel(
     val type: Int,
     val person: Int,
     val read: Int,
-)
+    val hoursAgo: Int,
+    )
